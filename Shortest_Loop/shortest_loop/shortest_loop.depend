@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1502417394 source:c:\repository\cv\code\shortest_loop\shortest_loop\main.cpp
+	<iostream>
+	"include\shortest_loop.h"
+
+1502418290 c:\repository\cv\code\shortest_loop\shortest_loop\include\shortest_loop.h
+	<vector>
+	<iostream>
+	<fstream>
+	<set>
+	<cstring>
+	<string>
+
