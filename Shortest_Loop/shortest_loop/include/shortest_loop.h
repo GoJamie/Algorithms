@@ -7,6 +7,8 @@
 #include <cstring>
 #include <string>
 
+//#define DEBUG 1
+
 const int MAX_NODE_NUM = 51000;
 
 struct Edge{
@@ -30,7 +32,7 @@ struct queue_node{
     int distance;
     queue_node(int _id,int _dis):socket_id(_id),distance(_dis){}
     bool operator<(const queue_node& qnode)const{
-        return distance < qnode.distance;
+        return distance > qnode.distance;
     }
 };
 
@@ -40,7 +42,7 @@ class shortest_loop
         shortest_loop();
         shortest_loop(std::string filename);
         virtual ~shortest_loop();
-        void find_loops(std::vector<std::vector<int> >& loops);
+        void find_loops(std::vector<std::vector<int> >&ans);
     protected:
     private:
         std::vector<Socket>socket_list;
@@ -49,7 +51,7 @@ class shortest_loop
         std::vector<int>node_adj[MAX_NODE_NUM];
         bool visit[MAX_NODE_NUM];
         bool used[MAX_NODE_NUM];
-        void Dijsktra(int start,int cut_off,std::vector<int>& ans,int mini_composite_distance);
+        void Dijsktra(int start,int cut_off,std::vector<int>& ans,int& mini_composite_distance);
         std::set<int>walk[MAX_NODE_NUM];
 };
 

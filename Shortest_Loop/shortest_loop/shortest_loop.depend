@@ -11,3 +11,20 @@
 	<cstring>
 	<string>
 
+1502463843 source:c:\repository\cv\code\algorithms\shortest_loop\shortest_loop\src\shortest_loop.cpp
+	"shortest_loop.h"
+	<iostream>
+	<queue>
+
+1502467205 c:\repository\cv\code\algorithms\shortest_loop\shortest_loop\include\shortest_loop.h
+	<vector>
+	<iostream>
+	<fstream>
+	<set>
+	<cstring>
+	<string>
+
+1502467192 source:c:\repository\cv\code\algorithms\shortest_loop\shortest_loop\main.cpp
+	<iostream>
+	"include\shortest_loop.h"
+
